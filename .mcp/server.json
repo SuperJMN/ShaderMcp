@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.superjmn/shader-mcp",
+  "title": "ShaderMcp",
+  "description": "Native MCP server and CLI for deterministic Skia RuntimeEffect shader compilation and offscreen testing.",
+  "version": "0.1.0",
+  "packages": [
+    {
+      "registryType": "nuget",
+      "registryBaseUrl": "https://api.nuget.org/v3/index.json",
+      "identifier": "ShaderMcp",
+      "version": "0.1.0",
+      "transport": {
+        "type": "stdio"
+      },
+      "packageArguments": [],
+      "environmentVariables": []
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/SuperJMN/ShaderMcp",
+    "source": "github"
+  },
+  "websiteUrl": "https://github.com/SuperJMN/ShaderMcp"
+}

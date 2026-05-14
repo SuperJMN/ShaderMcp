@@ -13,10 +13,17 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>net10.0</TargetFramework>
     <Description>Local MCP server for creating and testing native Skia RuntimeEffect shaders.</Description>
-    <PackageId>ShaderMcp.Tool</PackageId>
+    <PackageId>ShaderMcp</PackageId>
+    <Title>ShaderMcp</Title>
+    <Authors>SuperJMN</Authors>
     <Version>0.1.0</Version>
     <PackageLicenseExpression>CC-BY-NC-4.0</PackageLicenseExpression>
     <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageProjectUrl>https://github.com/SuperJMN/ShaderMcp</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/SuperJMN/ShaderMcp</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>mcp;model-context-protocol;shader;shaders;sksl;skia;skiasharp;dotnet-tool</PackageTags>
+    <PackageType>DotnetTool;McpServer</PackageType>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>shader-mcp</ToolCommandName>
     <RollForward>Major</RollForward>
@@ -24,6 +31,7 @@
 
   <ItemGroup>
     <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\..\.mcp\server.json" Pack="true" PackagePath=".mcp\server.json" />
   </ItemGroup>
 
 </Project>
