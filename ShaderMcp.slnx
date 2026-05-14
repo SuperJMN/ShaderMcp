@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/ShaderMcp.Core/ShaderMcp.Core.csproj" />
+    <Project Path="src/ShaderMcp.Tool/ShaderMcp.Tool.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/ShaderMcp.Tests/ShaderMcp.Tests.csproj" />
+  </Folder>
+</Solution>

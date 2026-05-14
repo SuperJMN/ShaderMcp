@@ -1,0 +1,5 @@
+half4 fragmentMain(float2 fragCoord, float2 uv) {
+    half4 source = inputTexture.eval(fragCoord);
+    float wave = 0.5 + 0.5 * sin(time + uv.x * 6.2831853);
+    return half4(uv.x, uv.y * wave, source.b, 1.0);
+}
