@@ -70,7 +70,7 @@ internal static class ShaderCli
     {
         if (options.TryGetValue("id", out var id))
         {
-            var workspace = new ShaderWorkspace(options.GetValueOrDefault("workspace", Directory.GetCurrentDirectory()));
+            var workspace = new ShaderWorkspace(options.GetValueOrDefault("workspace", ShaderWorkspaceRoot.ResolveDefault()));
             var shader = await workspace.Get(id);
             if (shader.IsFailure)
                 throw new InvalidOperationException($"{shader.ErrorCode}: {shader.Error}");

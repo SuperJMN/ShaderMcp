@@ -64,6 +64,11 @@ command = "dotnet"
 args = ["run", "--project", "/home/jmn/Repos/ShaderMcp/src/ShaderMcp.Tool"]
 ```
 
+By default, MCP mode stores shaders and render artifacts under the user data
+folder, for example `~/.local/share/ShaderMcp` on Linux. Set
+`SHADER_MCP_WORKSPACE=/path/to/workspace` to use a project-local or disposable
+workspace explicitly.
+
 Main tools:
 
 - `create_shader`

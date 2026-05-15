@@ -17,11 +17,7 @@ var builder = Host.CreateApplicationBuilder(args);
 builder.Logging.ClearProviders();
 builder.Logging.AddConsole(options => options.LogToStandardErrorThreshold = LogLevel.Trace);
 
-var workspaceRoot = Environment.GetEnvironmentVariable("SHADER_MCP_WORKSPACE");
-if (string.IsNullOrWhiteSpace(workspaceRoot))
-    workspaceRoot = Directory.GetCurrentDirectory();
-
-builder.Services.AddSingleton(new ShaderWorkspace(workspaceRoot));
+builder.Services.AddSingleton(new ShaderWorkspace(ShaderWorkspaceRoot.ResolveDefault()));
 builder.Services.AddSingleton<NativeShaderRunner>();
 
 builder.Services
