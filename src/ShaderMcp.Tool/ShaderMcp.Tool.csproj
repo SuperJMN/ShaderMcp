@@ -17,7 +17,7 @@
     <Title>ShaderMcp</Title>
     <Authors>SuperJMN</Authors>
     <Version>0.1.0</Version>
-    <PackageLicenseExpression>CC-BY-NC-4.0</PackageLicenseExpression>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageProjectUrl>https://github.com/SuperJMN/ShaderMcp</PackageProjectUrl>
     <RepositoryUrl>https://github.com/SuperJMN/ShaderMcp</RepositoryUrl>
@@ -31,6 +31,7 @@
 
   <ItemGroup>
     <None Include="..\..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\..\LICENSE" Pack="true" PackagePath="\" />
     <None Include="..\..\.mcp\server.json" Pack="true" PackagePath=".mcp\server.json" />
   </ItemGroup>
 
